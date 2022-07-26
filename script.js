@@ -25,7 +25,7 @@ const makeUser = function () {
     },
     exec: function () {
       if (this.string.length === 0) {
-        this.string = "";
+        this.string.push = "";
       }
       console.log(this.string.join(', '));
     },
@@ -34,9 +34,3 @@ const makeUser = function () {
 
 const user = makeUser();
 
-
-// calling this
-user.sleep().swim().speak().jump().swim().sleep().run().exec();
-
-// should output this
-// ("sleeping, swimming, speaking, jumping, swimming, sleeping, running, running");
